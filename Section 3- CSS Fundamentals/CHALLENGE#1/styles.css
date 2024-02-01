@@ -1,0 +1,54 @@
+article.product h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+article.product {
+  border-style: solid;
+  font-family: Lato;
+}
+
+article.product h2 {
+  text-align: center;
+  background-color: #d3d3d345;
+}
+
+p.price {
+  font-size: 1.5em;
+}
+
+p.shipping {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: grey;
+}
+
+article.product a:link,
+article.product a:visited {
+  color: black;
+}
+
+article.product a:hover,
+article.product a:active {
+  text-decoration-line: none;
+}
+
+article.product ul {
+  list-style-type: square;
+}
+
+button.addToCart {
+  border-style: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  transition: color 100ms, background-color 100ms;
+}
+
+button.addToCart:hover {
+  background-color: white;
+  color: black;
+}

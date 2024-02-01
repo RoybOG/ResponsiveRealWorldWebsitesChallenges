@@ -1,0 +1,81 @@
+article.product h2,
+article.product h3 {
+  text-transform: uppercase;
+}
+
+article.product {
+  border-style: solid;
+  border-width: 4px;
+  font-family: Lato;
+  width: 825px;
+  margin: 60px auto;
+}
+
+article.product * {
+  margin: 0px;
+  padding: 0px;
+}
+
+article.product h2 {
+  text-align: center;
+  background-color: #d3d3d345;
+  padding-block: 1em;
+}
+
+article.product h3 {
+  margin-top: 1em;
+}
+
+p.price {
+  font-size: 1.5em;
+  margin-block: 0.3em;
+}
+
+p.shipping {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: grey;
+}
+
+p.information {
+  margin-block: 1em;
+}
+p.information a:link,
+p.information a:visited {
+  color: black;
+  display: block;
+}
+
+p.information a:hover,
+p.information a:active {
+  text-decoration-line: none;
+}
+
+article.product ul {
+  padding-inline-start: 5px;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+article.product ul li {
+  margin-block: 0.7em;
+}
+
+button.addToCart {
+  border-color: black;
+  border-style: solid none none;
+  border-width: 4px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  transition: color 100ms, background-color 100ms;
+  width: 100%;
+  padding-block: 1em;
+}
+
+button.addToCart:hover {
+  background-color: white;
+  color: black;
+}

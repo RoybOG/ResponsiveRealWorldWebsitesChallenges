@@ -5,6 +5,12 @@ article.product {
   width: 825px;
   margin: 60px auto;
   position: relative;
+  display: grid;
+  grid-template-areas: "articleTitle articleTitle articleTitle" "img info details" "button button button";
+  grid-template-rows: repeat(auto, 3);
+
+  grid-template-columns: auto 1fr 1fr;
+  column-gap: 40px;
 }
 
 article.product::before {
@@ -39,6 +45,10 @@ article.product ul#color-pick li:hover {
   padding: 0.7em;
 }
 
+img {
+  grid-area: img;
+}
+
 article.product .highlight,
 article.product::before {
   text-transform: uppercase;
@@ -54,20 +64,30 @@ article.product h2 {
   text-align: center;
   background-color: #d3d3d345;
   padding-block: 1em;
+  grid-area: articleTitle;
 }
 
-article.product h3 {
-  margin-top: 1em;
+article.product main {
+  margin-top: 20px;
+  grid-area: info;
+}
+
+article.product main header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 0.3em;
 }
 
 p.price {
   font-size: 1.5em;
-  margin-block: 0.3em;
 }
 
 p.shipping {
   font-size: 0.8em;
   color: grey;
+  top: 0px;
+  right: 0px;
 }
 
 p.information {
@@ -94,6 +114,7 @@ article.product ul li {
 }
 
 button.addToCart {
+  grid-area: button;
   border-color: black;
   border-style: solid none none;
   border-width: 4px;

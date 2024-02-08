@@ -7,6 +7,13 @@ article.product {
   position: relative;
 }
 
+article.product img {
+  float: left;
+}
+
+article.product main {
+  position: relative;
+}
 article.product::before {
   content: "sale";
   position: absolute;
@@ -19,6 +26,20 @@ article.product::before {
   color: white;
   padding: 0.5em 1em;
   letter-spacing: 0.2em;
+}
+article.product section::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+article.product .text_container {
+  float: left;
+  margin-inline-start: 40px;
+  margin-top: 20px;
+  width: 247px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 article.product ul#color-pick {
@@ -56,10 +77,6 @@ article.product h2 {
   padding-block: 1em;
 }
 
-article.product h3 {
-  margin-top: 1em;
-}
-
 p.price {
   font-size: 1.5em;
   margin-block: 0.3em;
@@ -68,6 +85,9 @@ p.price {
 p.shipping {
   font-size: 0.8em;
   color: grey;
+  position: absolute;
+  top: 10px;
+  right: 20px;
 }
 
 p.information {

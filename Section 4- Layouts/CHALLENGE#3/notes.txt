@@ -1,0 +1,4 @@
+move the free shipping to float right to the pricve
+make containers for the 3 edlements and have them next to each other!
+between contianer 40 px of space
+figure out the width of all containers.
